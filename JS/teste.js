@@ -77,7 +77,7 @@ function score(){
 
     }else{
         alert("Você não foi aprovado, estude um pouco mais e tente novamente.")
-        window.location.href = "aula.html";
+        window.location.href = "aulas.html";
     }
 }
 
