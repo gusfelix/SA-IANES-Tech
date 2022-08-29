@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+
+        <link rel="stylesheet" href="style_aulas.css">
+        <script defer src="JS/script_aulas.js"></script>
+
+        <link rel="icon" href="img/logo.png">
+    </head>
+
+    <body>
+        <header class="col-12"> 
+            <section id="logo" onclick="jumpto_inicio()">
+                <img src="img/logo.png" class="test" alt="" height="50px">
+            </section>
+        </header>
+
+        <main class="col-12">
+
+            <article id = "video" class="col-9">
+                <iframe id = "vd"  src="https://www.youtube.com/embed/1yDdvg90674" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen="true"></iframe>
+            </article>
+            
+            <aside class="col-3">
+                <section id="titulo">
+                    <h2>Curso Subconjuntos SQL</h2>
+                    <br/>
+                    <h3>Aulas: </h3>
+                </section>
+
+
+                <section id="aulas">
+                    <section class="aula" id="aula1" onclick="return changeSrc(this.id)"> 
+
+                        <img src="img/thumb-aula1.jpeg" alt="" class="thumbnail">
+                        <p>Aula 1 <br> O que é SQL?</p>
+                    </section>
+
+                    <section class="aula" id="aula2" onclick="return changeSrc(this.id)">
+                        <img src="img/thumb-aula2.jpg" alt="" class="thumbnail">
+                        <p>Aula 2 <br/> Comandos DDL</p>
+                    </section>
+
+                    <section class="aula" id="aula3" onclick="return changeSrc(this.id)">
+                        <img src="img/thumb-aula3.jpg" alt="" class="thumbnail">
+                        <p>Aula 3 <br/> Comandos DQL</p>
+                    </section>
+
+                    <section class="aula" id="aula4" onclick="return changeSrc(this.id)">
+                        <img src="img/thumb-aula4.jpg" alt="" class="thumbnail">
+                        <p>Aula 4 <br/> Comandos DML</p>
+                    </section>
+
+                    <section class="aula" id="aula5" onclick="return changeSrc(this.id)">
+                        <img src="img/thumb-aula5.jpg" alt="" class="thumbnail">
+                        <p>Aula 5 <br/> Comandos DCL</p>
+                    </section>
+
+                    <section class="aula" id="aula6" onclick="return changeSrc(this.id)">
+                        <img src="img/thumb-aula6.jpg" alt="" class="thumbnail">
+                        <p>Aula 6 <br/> Comandos DDL</p>
+                    </section>
+
+                    <section class="outros aula" onclick="jumpto_test()">PROSSEGUIR PARA AVALIAÇÃO
+
+                    </section>
+
+                    <section class="outros aula" onclick="jumpto_certificado()">ACESSAR CERTIFICADO DE CONCLUSÃO
+
+                    </section>
+                </section>
+            </aside>
+
+            <article id="desc" class="col-9">
+                <section class="col-4 sobre">
+                    <h2>Sobre o curso:</h2>
+
+                    <br/>
+
+                    <p>Curso Introdutório à linguagem SQL, usada em banco de dados, seus subconjuntos 
+                        e principais comandos
+                    </p>
+                </section>
+
+                <section class="col-4 sobre">
+                    <h2>Instrutor: </h2>
+
+                    <br/>
+
+                    <p>Mateus Meira</p>
+                </section>
+
+                <section class="col-4 sobre">
+                    <h2>Material da aula:</h2>
+
+                    <br/>
+
+                    <a href="material/Aula1.pdf" download  id="link_download" target="_blank" ><button id="Material_da_aula_botao"> DOWNLOAD</button></a>
+                </section>
+            </article>
+            
+        </main>
+
+    </body>
+
+</html>

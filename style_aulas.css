@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    height: 70px;
+    border: 0px solid #000;
+    background-color: #353535;
+    padding: 8px;
+    color: #fff;
+}
+
+#logo{
+    float: left;
+}
+
+#logo:hover{
+
+    cursor: pointer;
+}
+
+#video{
+    float: left;
+    position: relative;
+    border: 0px solid #000;
+    height: 500px;
+}
+
+#vd{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    float: left;
+}
+
+#desc{
+    float: left;
+    border: 0px solid #000;
+    height: 280px;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.sobre{
+    float: left;
+    padding: 5px;
+    border: 0px solid #000;
+    text-align: center;
+}
+
+#desc > section:first-child{
+    text-align: left;
+}
+
+.sobre > a > button{
+    height: 50px;
+    width: 180px;
+    border-radius: 35px;
+    background-color: rgb(167, 167, 167);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    border: 2px solid rgb(97, 97, 97);
+    font-size: 12pt;
+}
+
+.sobre > a > button:hover{
+    background-color: rgb(126, 126, 126);
+}
+
+.sobre > a > button:active{
+    background-color: rgb(126, 126, 126);
+    color: #fff;
+}
+
+aside{
+    float: right;
+    border: px solid #000;
+    height: 100%;
+    background-color: #bbb;
+}
+
+#titulo{
+    border-bottom: 0px solid #000;
+    margin-bottom: 0px;
+    height: 100px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+
+#aulas{
+    border: 0px solid #000;
+    height: 660px;
+    overflow-y: scroll;
+}
+
+.aula{
+    background-color: #ddd;
+    border: 1px solid #bbb;
+    height: calc(100% / 6);
+    text-align: center;
+    padding: 15px;
+}
+
+.aula:hover{
+    background-color: #ccc !important; 
+    cursor: pointer;
+}
+
+.outros{
+    font-size: 14pt;
+    padding-top: 40px;
+}
+
+.thumbnail{
+    float: left;
+    border: 0px solid #000;
+    width: 135px;
+    /* margin-top:px; */
+}
+
+footer{
+    float: left;
+    height: 120px;
+    background-color: #353535;
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 1061px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    #video{
+        float: left;
+        position: relative;
+        border: 0px solid #000;
+        height: 0;
+        padding-bottom: 56.25%;
+        margin-bottom: 0;
+    }
+    
+    #desc{
+        background-color: #ccc;
+        height: 370px;
+    }
+
+    .sobre{
+        text-align: left;
+    }
+}
